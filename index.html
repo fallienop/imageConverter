@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">File Converter</h1>
+                <input placeholder="File Name"  style="margin-bottom: 10px; width: 100% ; height: calc(1.5em + .75rem + 2px); border: 1px solid rgba(0, 0, 0, .125);     border-radius: .25rem;" type="text" id="textInput"/>
+                <div class="custom-file mb-3">
+                    <input type="file" accept="image/png, image/gif, image/jpeg, image/webp"  class="custom-file-input" id="fileInput">
+                 
+                    <label class="custom-file-label"  for="fileInput">Choose file</label>
+                </div>
+                <select class="custom-select mb-3" id="convertType">
+                    <option value="png">PNG</option>
+                    <option value="jpg">JPG</option>
+                    <option value="gif">GIF</option>
+                </select>
+                <button id="convertButton" class="btn btn-primary btn-block">Convert</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
